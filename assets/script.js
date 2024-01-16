@@ -1,49 +1,22 @@
-//  VARIÁVEIS 
-// var nome = 'josé'
+// EXERCICIOS DE FIXAÇÃO
 
-// let idade = 32
+// 01- Crie uma variável para armazenar o nome 
+// do carro e ponha o valor Ferrari. E exiba-a.
 
-// const sobreNome = 'silva'
+let nomeDoCarro = "Ferrari";
+console.log(nomeDoCarro);
 
-// console.log(nome, sobreNome ,  idade);
+// 02- Crie uma variável para armazenar o preço do bolo
+//que custa R$19,99. E exiba-a.
 
+let precoDoBolo = 19.99;
+console.log(precoDoBolo);
 
-// let estado = 'CE'
+// 03- Corrija o código a seguir e exiba-o.
+// let "cidade" = são paulo
 
-// let cidade = 'Icapuí'
-
-
-// console.log(`Meu nome é ${nome}, tenho ${idade} anos, moro na cidade de ${cidade}, capital é ${estado}..`)
-
-
-//TIPO DE DADOS 
-// string
-let nome = "Jessé";
-// Number
-let idade = 32;
-// boolean 
-let casado = true;
-// boolean
-let netos = false;
-// arrey
-let nomeFilhos = ["Manuela", "Isaac"];
-// objeto
-let nomeCompleto = {
-    nome:"Jessé",
-    idade: 32,
-    casado: true,
-    filhos: true,
-    netos: false
-}
-
-// VERIFICANDO O TIPO DE DADOS USABDO O TYPEOF
-console.log(typeof nome)
-console.log(typeof idade)
-console.log(typeof casado)
-console.log(typeof nomeFilhos)
-console.log(typeof netos)
-console.log(typeof nomeCompleto)
-
+let cidade = "São Paulo";
+console.log(cidade);
 
 
 
