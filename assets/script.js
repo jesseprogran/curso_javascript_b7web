@@ -21,9 +21,9 @@
 let nome = "Jessé";
 // Number
 let idade = 32;
-// true 
+// boolean 
 let casado = true;
-// false
+// boolean
 let netos = false;
 // arrey
 let nomeFilhos = ["Manuela", "Isaac"];
@@ -36,7 +36,7 @@ let nomeCompleto = {
     netos: false
 }
 
-// VERIFICANDO O TIPO DE DADOS 
+// VERIFICANDO O TIPO DE DADOS USABDO O TYPEOF
 console.log(typeof nome)
 console.log(typeof idade)
 console.log(typeof casado)
