@@ -1,22 +1,16 @@
-// EXERCICIOS DE FIXAÇÃO
+// CONCATENANDO
+let nomeDaEsposa = "Lucivânia";
+let sobreNome = "Valente";
 
-// 01- Crie uma variável para armazenar o nome 
-// do carro e ponha o valor Ferrari. E exiba-a.
+// let nomeESobreNome = nomeDaEsposa + ' ' + sobreNome;
+// let nomeESobreNome = ` ${nomeDaEsposa} ${sobreNome}`;
+// console.log(nomeESobreNome);
 
-let nomeDoCarro = "Ferrari";
-console.log(nomeDoCarro);
+// DIFERENÇA ENTRE STRING E TEMPLATE STRING
 
-// 02- Crie uma variável para armazenar o preço do bolo
-//que custa R$19,99. E exiba-a.
+let nomeESobreNome = ` ${nomeDaEsposa} ${sobreNome} da Silva Perobeira`;
+console.log(nomeESobreNome);
 
-let precoDoBolo = 19.99;
-console.log(precoDoBolo);
-
-// 03- Corrija o código a seguir e exiba-o.
-// let "cidade" = são paulo
-
-let cidade = "São Paulo";
-console.log(cidade);
 
 
 
