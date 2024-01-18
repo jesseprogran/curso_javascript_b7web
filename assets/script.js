@@ -1,17 +1,26 @@
-// CONCATENANDO
-let nomeDaEsposa = "Lucivânia";
-let sobreNome = "Valente";
+// CONDICIONAIS 
 
-// let nomeESobreNome = nomeDaEsposa + ' ' + sobreNome;
-// let nomeESobreNome = ` ${nomeDaEsposa} ${sobreNome}`;
-// console.log(nomeESobreNome);
+let valorMeuCarro = 50.000;
 
-// DIFERENÇA ENTRE STRING E TEMPLATE STRING
+// if (valorMeuCarro === 49.000 ) {
+//     console.log("Valor do Meu carro");
+// }else {
+//     console.log("Esse não foi o valor do meu CARRO!!!");
+// }
 
-let nomeESobreNome = ` ${nomeDaEsposa} ${sobreNome} da Silva Perobeira`;
-console.log(nomeESobreNome);
+// <
+// >
+// ==
+// >=
+// <=
+// !=
 
 
 
+//  MULTICONDICIONAIS
 
+let idade = 50;
 
+if (idade >= 18 && idade < 60) {
+    console.log("você é adulto.");
+}
