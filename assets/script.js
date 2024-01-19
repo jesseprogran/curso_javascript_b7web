@@ -1,31 +1,14 @@
-// Exercicios de Condicionais
-// 01 - Substitua o @ pela condicional correta para que 
-// o resultado seja TRUE.
-let x = 10;
-let y = 5;
 
-console.log(x !== y);
+// usando conidcional ternaria
 
-// 02 - Substitua o @ pela condicional correta para que 
-// o resultado seja FALSE.
-let w = "10";
-let z = 10;
+let isMember = false;
 
-console.log(w === z);
-// 03 -  Substitua o @ pela condicional correta para que 
-// o resultado seja TRUE.
+let shipping = isMember ? 2 : 10;
 
-let a = 10;
-let b = 5;
+console.log( isMember ? 'voce é membro' : 'voce não é membro');
+console.log("FRETE: " + shipping);
 
-console.log(a != b);
+let age = 6;
 
-// 04 - Crie uma condicional para verificar se o preço da 
-// carne está barato ou caro. PS: Até 45 está barato.
-let preco = 10;
-
-if (preco <= 45) {
-    console.log("ESTÁ BARATO");
-} else {
-    console.log("ESTÁ CARA");
-}
+let isAdult = ((age >= 18 && age < 60 ) ? 'sim' : 'não');
+console.log(isAdult);
