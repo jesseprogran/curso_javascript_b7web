@@ -12,3 +12,8 @@ let age = 6;
 
 let isAdult = ((age >= 18 && age < 60 ) ? 'sim' : 'não');
 console.log(isAdult);
+
+let nome = "verdadeiro";
+nome = "falso";
+
+console.log(nome);
