@@ -1,19 +1,20 @@
+//  Condicional Switch
 
-// usando conidcional ternaria
+let profession = "Bombeiro";
 
-let isMember = false;
+console.log("Profissão: " + profession);
 
-let shipping = isMember ? 2 : 10;
-
-console.log( isMember ? 'voce é membro' : 'voce não é membro');
-console.log("FRETE: " + shipping);
-
-let age = 6;
-
-let isAdult = ((age >= 18 && age < 60 ) ? 'sim' : 'não');
-console.log(isAdult);
-
-let nome = "verdadeiro";
-nome = "falso";
-
-console.log(nome);
+switch (profession) {
+    case 'fiscal':
+        console.log('Sua carreira será VERDE');
+        break;
+    case 'bombeiro':
+        console.log('Sua carreira será VERMELHA');
+        break;
+    case 'policial':
+        console.log('Sua carreira será AZUL');
+        break;
+    default:
+        console.log('Quando for nenhuma será PRETA');
+        break;
+}
