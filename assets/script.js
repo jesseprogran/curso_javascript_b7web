@@ -1,16 +1,21 @@
-function maiorDeIdade(idade) {
-    if (idade >= 18) {
-        return true;
-    } else {
-        return false;
-    }
+// EXERCICIOS SOBRE FUNÇÃO 
+// 01 - Calcule a porcentagem entre 2 números.
+// Exemplo: 25% de 40 é 10
+// Fórmula da porcentagem: (y / x) * 100
+// Uso da Função:
+
+// let x = 40;
+// let y = 10;
+// let pct = calcPct(x, y);
+//console.log(`${pct}% de ${x} é ${y}`);
+
+
+function calcPct(x, y) {
+    return (y / x) * 100
 }
 
-let idade = 45;
+let x = 40;
+let y = 10;
 
-let verificacao = maiorDeIdade(idade);
-if (verificacao) {
-    console.log('É maior de idade');
-} else {
-    console.log('É menor de idade');
-}
+let pct = calcPct(x, y);
+console.log(`${pct}% de ${x} é ${y}`);
