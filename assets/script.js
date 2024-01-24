@@ -1,8 +1,16 @@
-// FUNÇÕES RETORNO
-function nomeCompleto(nome, sobrenome) {
-    return `${nome} ${sobrenome}`;
+function maiorDeIdade(idade) {
+    if (idade >= 18) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-let completo = nomeCompleto("Jessé", "Silva");
+let idade = 45;
 
-console.log(completo);
+let verificacao = maiorDeIdade(idade);
+if (verificacao) {
+    console.log('É maior de idade');
+} else {
+    console.log('É menor de idade');
+}
