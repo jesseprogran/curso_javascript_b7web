@@ -4,6 +4,5 @@
 //     return `${nome} ${sobrenome}`;
 // };
 
-
-let person = (nome, sobrenome) => `${nome} ${sobrenome}`;
+const  person = (nome, sobrenome) => `${nome} ${sobrenome}`;
 console.log(person('Jessé', 'Silva'));
