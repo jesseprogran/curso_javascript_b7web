@@ -5,4 +5,4 @@
 // };
 
 const  person = (nome, sobrenome) => `${nome} ${sobrenome}`;
-console.log(person('Jessé', 'Silva'));
+console.log(person('Jessé', 'Silva'))
