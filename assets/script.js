@@ -1,8 +1,11 @@
-// AULA SOBRE ARROW FUNCTION
+// Funções dentro de funções
+function addSquares(a, b) {
+    const square = (x) => x * x;
 
-// const person = (nome, sobrenome) => {
-//     return `${nome} ${sobrenome}`;
-// };
+    let sqrA = square(a);
+    let sqrB = square(b);
 
-const  person = (nome, sobrenome) => `${nome} ${sobrenome}`;
-console.log(person('Jessé', 'Silva'))
+    return sqrA + sqrB;
+}
+
+console.log(addSquares(10, 4));
