@@ -1,28 +1,16 @@
-// Array
-
-let nome = [
-    'Jessé', 
-    'Davi', 
-    'Dalila'
+// Array    Operações Básicas
+const car = [
+    'Corola',
+    'Prisma',
+    'Voyage',
+    'Golf',
+    'Hb20'
 ];
 
-let lista = [
-    'Ovo',
-    12,
-    'Óleo',
-    122
-];
+car.push('Hyundy'); // esse método adciona itens ao array;
+car.pop(); // Remove o ultimo item de um array;
+car.shift(); // Remove o primeiro item de um array;
 
-let igreja = [
-    'Pastores',
-    ['presbitero', 'diaconos', 'obreiros'],
-    'Músicos',
-    ['Bateria', 'Guitarra', 'Baixo']
-];
+console.log(car);
+console.log(car.length);
 
-// console.log(nome);
-// console.log(nome[1]);
-// console.log(lista);
-// console.log(lista[3]);
-console.log(igreja);
-console.log(igreja[3][2]);
