@@ -1,11 +1,28 @@
-// Funções dentro de funções
-function addSquares(a, b) {
-    const square = (x) => x * x;
+// Array
 
-    let sqrA = square(a);
-    let sqrB = square(b);
+let nome = [
+    'Jessé', 
+    'Davi', 
+    'Dalila'
+];
 
-    return sqrA + sqrB;
-}
+let lista = [
+    'Ovo',
+    12,
+    'Óleo',
+    122
+];
 
-console.log(addSquares(10, 4));
+let igreja = [
+    'Pastores',
+    ['presbitero', 'diaconos', 'obreiros'],
+    'Músicos',
+    ['Bateria', 'Guitarra', 'Baixo']
+];
+
+// console.log(nome);
+// console.log(nome[1]);
+// console.log(lista);
+// console.log(lista[3]);
+console.log(igreja);
+console.log(igreja[3][2]);
