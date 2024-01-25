@@ -1,16 +1,27 @@
-// Array    Operações Básicas
-const car = [
-    'Corola',
-    'Prisma',
-    'Voyage',
-    'Golf',
-    'Hb20'
+// Exercicios Array;
+
+// 01- No array abaixo, qual o número que pega a Ferrari?
+
+let carros = [
+    'BMW',
+    'Ferrari',
+    'Mercedes'
 ];
 
-car.push('Hyundy'); // esse método adciona itens ao array;
-car.pop(); // Remove o ultimo item de um array;
-car.shift(); // Remove o primeiro item de um array;
+let x = 1
+console.log('1. ' + carros[x]);
 
-console.log(car);
-console.log(car.length);
+// 02- Troque a Ferrari Por Audi;
+carros[1] = 'Audi';
+console.log('2. Lista com Audi: ');
+console.log(carros);
+
+// 03- Adcione o Volvo a lista;
+carros.push('Volvo');
+console.log('3. Lista com Volvo: ');
+console.log(carros);
+
+// 04- Exiba quantos itens tem no array;
+console.log('4. itens no array: ' + carros.length);
+
 
