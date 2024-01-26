@@ -1,4 +1,4 @@
-// Objetos;
+// Acessando e alterando Objetos
 
 let personagem = {
     nome: 'Batman',
@@ -13,9 +13,20 @@ let personagem = {
     }
 };
 
-console.log(`Esse personagem ${personagem.nome} tem  como habilidade ${personagem.poderes.habilidade} %.`)
-console.log(`O personagem ${personagem.nome} tem o uniforme da cor ${personagem.uniformes[2]}.`);
-console.log(`Esse personagem tem o nome de ${personagem.nome} e tem a idade de ${personagem.idade} anos.`);
-console.log(personagem);
+personagem.nome = 'Super Man';
+personagem.poderes.forca += 10;
+personagem.uniformes.pop();
 
+console.log(personagem.nome);
 
+const car = {
+    nome: 'Jessé',
+    idade: 32,
+    carros: [
+        {modelo: 'GOL', cor: 'PRETO'},
+        {modelo: 'FIAT', cor: 'BRANCO'}
+    ]
+}
+car.carros[0].modelo;
+
+console.log(car.carros);
