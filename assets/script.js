@@ -1,13 +1,13 @@
-// funções dentro de Objetos;
+// loop for
 
-let pessoa = {
-    nome: 'Manuela',
-    sobrenome: 'Valente',
-    idade: 7,
-    nomeCompleto: function () {
-        return `${this.nome} ${this.sobrenome}`;
-    }
+for(let n = 1; n <= 15; n++) {
+    console.log('Números ' + n);
 }
 
 
-console.log(pessoa.nomeCompleto());
+
+let comida = ['laranja', 'goiaba', 'melancia'];
+
+for(comida = 0; comida < 5; comida++) {
+    console.log('Frutas ' + comida);
+}
