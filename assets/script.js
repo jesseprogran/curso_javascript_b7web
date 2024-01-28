@@ -1,13 +1,42 @@
-// loop for
+// loop for em arrays
 
-for(let n = 1; n <= 15; n++) {
-    console.log('Números ' + n);
+let melhoresCorredores = ['Lorin', 'Luiz Carlos', 'João', 'Juciê'];
+melhoresCorredores.push('Jessé');
+melhoresCorredores.push('Davi');
+
+for( i = 0; i < melhoresCorredores.length; i++ ){
+    console.log('Esses foram os Melhores ' + melhoresCorredores[i]);
 }
 
+//exemplo pegando a chave do array
+
+for ( z in melhoresCorredores) {
+    console.log(melhoresCorredores[z]);
+}
+
+// pegando pelo valor
+
+for (jogador of melhoresCorredores) {
+    console.log(jogador);
+}
+
+//////////
 
 
-let comida = ['laranja', 'goiaba', 'melancia'];
+let cores = [
+    {nome:'Vermelho', qtd: 23},
+    {nome: 'Preto', qtd: 15},
+    {nome:'Azul', qtd: 29}
+]
 
-for(comida = 0; comida < 5; comida++) {
-    console.log('Frutas ' + comida);
+for (i = 0; i < cores.length; i++) {
+console.log(`Cores Disponiveis: ${cores[i].nome} ${cores[i].qtd}`);
+}
+
+for (v in cores) {
+    console.log(`Cores e Quantidades: ${cores[v].nome} ${cores[v].qtd}`);
+}
+
+for (valor of cores) {
+    console.log(`C e Q : ${valor.nome} ${valor.qtd}`);
 }
