@@ -1,9 +1,8 @@
 // Eventos de Click;
 
 function clicou() {
-   console.log('Deu Certo...')
+  const teste = document.querySelector('#teste');
+  const ul = teste.querySelector('ul');
+
+ul.innerHTML = `${ul.innerHTML} <li> Shom de bola</li>`; 
 }
-let botao = document.querySelector('.botao');
-botao.addEventListener('click', () => {
-   clicou();
-});
