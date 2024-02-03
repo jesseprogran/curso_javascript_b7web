@@ -1,15 +1,9 @@
 // Eventos de Click;
 
 function clicou() {
-   const input = document.querySelector('input');
-   const botao = document.querySelector('.botao');
+   const h1 = document.querySelector('h1');
 
-   if (input.getAttribute('type') === 'text') {
-      input.setAttribute('type', 'password');
-      botao.innerText = `Mostrar Senha`;
-   } else {
-      input.setAttribute('type', 'text');
-      botao.innerText = `Ocultar Senha`;
-   }
-   
+   h1.style.backgroundColor = '#df0';
+   h1.style.fontSize = '30px';
+  
 }
