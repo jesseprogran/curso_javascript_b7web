@@ -1,9 +1,16 @@
-// Eventos de Click;
+// Eventos de teclado;
 
-function clicou() {
-   const h1 = document.querySelector('h1');
-
-   h1.style.backgroundColor = '#df0';
-   h1.style.fontSize = '30px';
-  
+function apertou() {
+   console.log('APERTOU');
 }
+
+function segurou() {
+   console.log('SEGUROU');
+}
+
+function soltou() {
+   console.log('SOLTOU');
+}
+
+document.addEventListener('keyup', soltou);
+
