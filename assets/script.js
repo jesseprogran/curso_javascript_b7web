@@ -1,8 +1,15 @@
-// Eventos de teclado;
+// Elementos
+   const input = document.querySelector('input');
+   const lista = document.querySelector('ul');
+// Funções
+function handleKeyUp(event) {
+   if (event.key === 'Enter') {
+      const newLi = document.createElement('li');
+      newLi.innerHTML = input.value;
+      lista.appendChild(newLi);
 
-function soltou(e) {
-   console.log(e.key);
+      input.value = '';
+   }
 }
-const input = document.querySelector('input');
-input.addEventListener('keyup', soltou);
-
+// Eventos
+input.addEventListener('keyup', handleKeyUp);
