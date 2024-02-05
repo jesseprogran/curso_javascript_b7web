@@ -1,45 +1,21 @@
-// Orientação a Objetos
+// Herança
+
 class Person {
+   age = 0;
 
-   _age = 0;
-   steps = 0;
-   constructor(firstName, lastName) {
-      this.firstName = firstName;
-      this.lastName = lastName;
-   }
-
-   takeAstep() {
-      this.steps++
-   }
-
-   get fullName() {
-      return `${this.firstName} ${this.lastName}`;
-   }
-
-   get age() {
-      return this._age;
-   }
-
-   set age(x) {
-      if(typeof x == 'number') {
-         this._age = x;
-      }
-   }
-
-   setAge(newAge) {
-      if(typeof newAge == 'number') {
-         this.age = newAge;
-      } else {
-         console.log('Error de Idade!! Somente Números');
-      }
+   constructor(name) {
+      this.name = name;
    }
 }
 
-// Instância
-let p1 = new Person('jesse','Silva');
-let p2 = new Person('Dalila');
-let p3 = new Person('Davi');
+class Student extends Person {
+   constructor(name, mt) {
+      super(name);
+      this.mt = mt;
+   }
+}
 
-p1.age = 100;
+let p1 = new Student('Jessé', 13456);
+p1.age = 33;
 
-console.log(`P1 = ${p1.fullName} tem ${p1.age}`);
+console.log(`${p1.name} tem ${p1.age} anos e sua MT é #${p1.mt}`);
