@@ -1,21 +1,45 @@
 // Orientação a Objetos
 class Person {
 
-   age = 0;
-   constructor(name) {
-      this.name = name;
+   _age = 0;
+   steps = 0;
+   constructor(firstName, lastName) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+   }
+
+   takeAstep() {
+      this.steps++
+   }
+
+   get fullName() {
+      return `${this.firstName} ${this.lastName}`;
+   }
+
+   get age() {
+      return this._age;
+   }
+
+   set age(x) {
+      if(typeof x == 'number') {
+         this._age = x;
+      }
+   }
+
+   setAge(newAge) {
+      if(typeof newAge == 'number') {
+         this.age = newAge;
+      } else {
+         console.log('Error de Idade!! Somente Números');
+      }
    }
 }
 
 // Instância
-let p1 = new Person('Jessé');
+let p1 = new Person('jesse','Silva');
 let p2 = new Person('Dalila');
 let p3 = new Person('Davi');
 
-p1.age = 33;
-p2.age = 37;
-p3.age = 38;
+p1.age = 100;
 
-console.log(`P1 = ${p1.name} tem ${p1.age}`);
-console.log(`P2 = ${p2.name} tem ${p2.age}`);
-console.log(`P3 = ${p3.name} tem ${p3.age}`);
+console.log(`P1 = ${p1.fullName} tem ${p1.age}`);
