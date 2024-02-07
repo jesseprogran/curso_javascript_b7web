@@ -1,18 +1,5 @@
-class Character {
-  _life = 1;
-  maxLife = 1;
-  attack = 0;
-  defense = 0;
+let char = new Knight("Jessé");
 
-  constructor(name) {
-    this.name = name;
-  }
-
-  get life() {
-    return this._life;
-  }
-
-  set life(newLife) {
-    this._life = newLife < 0 ? 0 : newLife;
-  }
-}
+console.log(char.name);
+console.log(char.attack);
+console.log(char.defense);
