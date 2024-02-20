@@ -82,10 +82,18 @@ const stage = {
       this.fighter1.name
     } - ${this.fighter1.life.toFixed(1)} HP`;
 
+    let f1Pct = (this.fighter1.life / this.fighter1.maxLife) * 100;
+    this.fighter1El.querySelector(".bar").style.width = `${f1Pct}%`;
+
     this.fighter2El.querySelector(".name").innerHTML = `${
       this.fighter2.name
     } - ${this.fighter2.life.toFixed(1)} HP`;
+
+    let f2Pct = (this.fighter2.life / this.fighter2.maxLife) * 100;
+    this.fighter2El.querySelector(".bar").style.width = `${f2Pct}%`;
   },
 
-  doAttack(attacking, attacked) {},
+  doAttack(attacking, attacked) {
+    this.update();
+  },
 };
