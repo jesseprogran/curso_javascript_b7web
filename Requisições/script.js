@@ -5,8 +5,8 @@ function ciclou() {
     .then((response) => {
       return response.json();
     })
-    .then((data) => {
-      console.log(data);
+    .then((json) => {
+      alert(`Seu Primeiro Post: ${json[0].title}`);
     });
 }
 
