@@ -6,9 +6,22 @@
     <title>Requisições JS</title>
   </head>
   <body>
-    <h1>Olá Javascript</h1>
+    <h1>Blog Fake</h1>
 
-    <button id="botao">Carregar Post</button>
+    <fieldset>
+      <legend>Inserir um novo post</legend>
+      <div>
+        <input placeholder="Título do post" id="titleField" />
+      </div>
+      <div>
+        <textarea id="bodyField"></textarea>
+      </div>
+      <div>
+        <button id="insertButton">Inseri</button>
+      </div>
+    </fieldset>
+
+    <div class="post"></div>
     <script src="script.js"></script>
   </body>
 </html>
